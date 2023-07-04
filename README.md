@@ -4,6 +4,7 @@
 
 ![GitHub](https://img.shields.io/github/license/Lyarkh/Solucao_Completa_End_To_End_Machine_Learning)
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Lyarkh/Solucao_Completa_End_To_End_Machine_Learning)
+![PyPI](https://img.shields.io/pypi/v/jupyter)
 
 
 
