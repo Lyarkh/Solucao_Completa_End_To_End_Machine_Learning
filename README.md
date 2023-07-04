@@ -2,6 +2,10 @@
 
 ---
 
+![GitHub](https://img.shields.io/github/license/Lyarkh/Solucao_Completa_End_To_End_Machine_Learning)
+
+
+
 Neste curso focaremos na implementação prática de uma solução de Machine Learning. Começaremos desde a parte básica de treinamento do modelo até a construção de uma API.
 
 Os dados deste case são oriundos do setor imobiliário.  Então, nosso objetivo será prever o preço de um imóvel baseado no comportamento de um conjunto de variáveis.
