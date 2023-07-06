@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "solucao-completa-end-to-end-machine-learning"
+version = "0.1.0"
+description = ""
+authors = ["Lyarkh <lcemanuel.emanuel@gmail.com>"]
+readme = "README.md"
+packages = [{include = "solucao_completa_end_to_end_machine_learning"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
