@@ -8,7 +8,7 @@ modelo = joblib.load('data/modells/modelo_random_florest_v1.pkl')
 
 
 @app.route('/predicao/<area>;<rooms>;<bathroom>;<parking_spaces>;<floor>;<animal>;<furniture>;<hoa>;<property_tax>', methods=['GET'])
-def root(parametro):
+def root(area, rooms,bathroom, parking_spaces, floor, animal, furniture, hoa, property_tax):
 
     try:
         predicao = modelo.predict()
