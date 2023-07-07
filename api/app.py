@@ -10,7 +10,11 @@ modelo = joblib.load('data/modells/modelo_random_florest_v1.pkl')
 @app.route('/predicao/<parametro>', methods=['GET'])
 def root(parametro):
 
-    predicao = modelo.predict()
+    try:
+        predicao = modelo.predict()
+        return {'valor_aluguel': predicao}
+    except:
+        return {'aviso': 'erro ao fazer a predicao'}
 
 
 if __name__ == '__main__':
