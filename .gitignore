@@ -7,6 +7,7 @@ instance/*
 !instance/.gitignore
 .webassets-cache
 .env
+Banco_Dados_API.db
 
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
@@ -319,4 +320,3 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,flask,jupyternotebooks,python
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
-
