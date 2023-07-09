@@ -1,6 +1,7 @@
 from flask import Flask
 import joblib
 import sqlite3
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -17,6 +18,12 @@ def root(area, rooms, bathroom, parking_spaces, floor, animal, furniture, hoa, p
 
     try:
         predicao = modelo.predict([lista_de_parametros_tratado])
+        lista_de_parametros.append(predicao)
+
+        insert_dados_ = f'''
+            INSERT INTO Log_APi (Inputs, Inicio, Fim, Processamento) VALUES
+            ({str(lista_de_parametros_tratado)}, {}, {}, {})
+        '''
         return {'valor_aluguel': str(predicao)}
     except:
         return {'aviso': 'erro ao fazer a predicao'}
